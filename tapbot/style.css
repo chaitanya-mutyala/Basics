@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body{
+    margin-top: 0.5vh;
+    height: 98.5vh;
+    width: 46vh;
+    border: 2px solid black;
+    border-radius: 8%;
+}
+
+header{
+    height: 22vh;
+}
+.line1{
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
+    margin-top: 0.3vh;
+}
+.line1 button{
+    width: 3vh;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+.line1 button i{
+    font-size: 1.5rem;
+}
+#abc{
+    color: #e2672b;
+}
+#line2{
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
+    margin-top: 0.5vh;
+    column-gap: 1.2vh;
+    
+}
+.line2{
+    height: 100px;
+    width: 100%;
+    border: 1px solid #000000;
+    box-shadow: 0 0 1rem rgba(0, 0, 0 ,0.2);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+
+}
+.line2 div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line2 div i{
+    font-size: 1.15rem;
+}
+.brands i{
+    padding: 1vh;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-bottom: 2.5px solid black;
+    border-right: 2.5px solid black;
+}
+.text{
+    display: flex;
+    font-size: 0.8rem;
+    column-gap: 1vh;
+}
+#end{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.8rem;
+}
+#end i{
+    border: 0.5px solid black;
+    padding: 0.2rem;
+    font-size: 0.85rem;
+    text-align: center;
+    margin-left: 1.2rem;
+
+}
+.end{
+    margin:0.5rem;
+}
+main{
+    height: 60vh;
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
+    margin-top: 0.5vh;
+    
+}
+.coins{
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1vh;
+    font-size: 2rem;
+}
+#img{
+    margin-left: 3vh;
+    margin-right: 3vh;
+    height: 33vh;
+    background-image: url("photo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#timer{
+    margin-top: 1vh;
+    height: 3vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+#timer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#claim{
+    height: 8vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+#claimbtn{
+    height: 5vh;
+    width :12vh;
+    font-size: 1.2rem;
+    color: #b3b3b3;
+    background-color: #6b6b6b;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    border: 0.5px solid black;
+    border-bottom: 2.5px solid black;
+    border-right: 2.5px solid black;
+}
+footer{
+    height: 7vh;
+    margin-top: 4vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    border: 1.5px solid #000000;
+    border-bottom: 0.7vh solid #000000;
+    border-right: 0.7vh solid #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+footer button{
+    font-size: 0.8rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 90%;
+    width: 70%;
+    border: none;
+    cursor: pointer;
+    margin: 0.5vh;
+    background-color: #fff;
+    color: #050505;
+
+}
+#Earn{
+    background-color: #000000;
+    color: #b3b3b3;
+}
