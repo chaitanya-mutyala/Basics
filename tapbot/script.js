@@ -29,6 +29,7 @@ claimbtn.addEventListener("click", () => {
 });
 
 tap.addEventListener("click", () => {
+    
     if (!countdownStarted) {
         startCountdown();
         countdownStarted = true;
@@ -45,6 +46,22 @@ tap.addEventListener("click", () => {
             plusOneText.classList.remove("show");
         }, 500);
     }
+});
+const backgroundImages = [
+    "photo2.jpg",
+    "photo3.jpg"
+];
+let currentImageIndex = 0;
+function changeBackgroundImage() {
+    currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+    tap.style.backgroundImage = `url(${backgroundImages[currentImageIndex]})`;
+}
+
+tap.addEventListener("dblclick", () => {
+    changeBackgroundImage();
+    setTimeout(()=>{
+        tap.style.backgroundImage=`url("photo.jpg")`;  
+    },1000);
 });
 
 function startCountdown() {
@@ -73,5 +90,10 @@ function refillEnergy() {
     updateTimerDisplay();
 }
 
+tap.addEventListener('touchend', (e) => {
+    if (e.detail === 2) {
+        changeBackgroundImage();
+    }
+});
 // Initial display update
 updateTimerDisplay();

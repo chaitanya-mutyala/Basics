@@ -60,6 +60,7 @@ header{
     text-decoration: none;
     color: inherit;
 
+
 }
 .line2 div{
     width: 100%;
@@ -294,3 +295,15 @@ footer button{
 .show {
     animation: moveUp 0.5s ease-in-out forwards;
 }
+.line:focus{
+    outline: none;
+}
+.line2:focus-visible{
+    outline: none;
+    box-shadow: none;
+}
+#img:focus {
+    outline: none;
+    box-shadow: none;
+}
+
