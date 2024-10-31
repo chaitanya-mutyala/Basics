@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    font-family: 'Arial', sans-serif;
+}
+
+.app {
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+#task-input, #due-date-input, #due-time-input, .priority-container button, .add-task-btn {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1em;
+}
+
+#task-input {
+    background-color: #f1f1f1;
+    outline: none;
+}
+
+.add-task-btn {
+    background: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-task-btn:hover {
+    background: #45a049;
+}
+
+/* Priority Dropdown */
+.priority-container {
+    position: relative;
+}
+
+#priority-selector {
+    width: 100%;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-options button {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dropdown-options button:hover {
+    background-color: #f3f3f3;
+}
+
+/* Task List */
+.task-list-container {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 0 20px 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-color: #fafafa;
+    position: relative;
+}
+
+li.low { border-left: 5px solid #4CAF50; }
+li.medium { border-left: 5px solid #FFC107; }
+li.high { border-left: 5px solid #f44336; }
+li.completed { text-decoration: line-through; color: gray; }
+
+.completed::before {
+    content: "✔ ";
+    color: green;
+    font-weight: bold;
+}
+
+/* Task Options */
+.task-options {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.task-options button {
+    padding: 8px 12px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.task-options button:hover {
+    background-color: #f3f3f3;
+}
+
+/* Extra Styling for Task Item Hover */
+li:hover {
+    transform: scale(1.02);
+}
